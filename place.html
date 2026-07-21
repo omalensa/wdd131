@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iceland | Land of Fire & Ice</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- HEADER / NAV -->
+    <header>
+        <nav>
+            <div class="logo">🌋 Iceland</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 600px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" 
+                 alt="Beautiful Icelandic landscape with mountains and Northern Lights" 
+                 class="hero-image">
+        </picture>
+        <div class="hero-overlay">
+            <h1>Discover Iceland</h1>
+            <p>Where fire meets ice</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Iceland</h2>
+            <p>Iceland is a Nordic island country known for its dramatic landscapes, volcanoes, geysers, hot springs, and the Northern Lights. It is one of the most geologically active places on Earth.</p>
+            <!-- Add more paragraphs, images, etc. -->
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Current Weather in Reykjavik</h2>
+            
+            <!-- Mobile icon (SVG) -->
+            <div class="weather-icon mobile-only">
+                <!-- Inline SVG or <img src="images/weather-icon.svg"> -->
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                    <!-- Example sun/cloud SVG - replace with your downloaded SVG -->
+                    <path d="M12 2L12 4M12 20L12 22M4 12L2 12M22 12L20 12M18.364 5.636L16.95 7.05M7.05 16.95L5.636 18.364M18.364 18.364L16.95 16.95M7.05 7.05L5.636 5.636" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="5"/>
+                </svg>
+            </div>
+
+            <div class="weather-grid">
+                <div class="weather-info">
+                    <p><strong>Temperature:</strong> <span id="temp">2</span>°C</p>
+                    <p><strong>Wind Speed:</strong> <span id="wind">15</span> km/h</p>
+                    <p><strong>Condition:</strong> Partly Cloudy ⛅</p>
+                </div>
+                
+                <div class="wind-chill">
+                    <h3>Wind Chill</h3>
+                    <p id="windChillDisplay">Calculating...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add more sections as needed (e.g., Attractions, Gallery) -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Samson Omale | Iceland Explorer</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+:root {
+    --primary: #025;
+    --accent: #f80;
+    --light: #f4f4f4;
+    --dark: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.weather {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.wind-chill {
+    background: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* Wider view */
+@media (min-width: 768px) {
+    .weather-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Pseudo-element for weather icon in wider view */
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.8rem;
+    }
+    
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* Global design improvements */
+h1, h2, h3 {
+    color: var(--primary);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
