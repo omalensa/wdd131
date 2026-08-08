@@ -47,6 +47,12 @@ header h1 {
   padding: 0.25rem 0.5rem;
 }
 
+/* Required by audit – display: flex on nav */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Navigation - hidden by default on mobile */
 .navigation {
   display: none;
