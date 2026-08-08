@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive temple picture album showcasing temples of The Church of Jesus Christ of Latter-day Saints.">
+  <meta name="author" content="Samson Omale">
+  <title>Temple Album | WDD 131</title>
+
+  <!-- Mobile-first CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <!-- Larger view CSS -->
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+    <nav class="navigation">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+
+    <div class="temple-grid">
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" 
+             alt="Aba Nigeria Temple" loading="lazy" width="400" height="250">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg" 
+             alt="Manti Utah Temple" loading="lazy" width="400" height="250">
+        <figcaption>Manti Utah Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg" 
+             alt="Payson Utah Temple" loading="lazy" width="400" height="225">
+        <figcaption>Payson Utah Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg" 
+             alt="Yigo Guam Temple" loading="lazy" width="400" height="250">
+        <figcaption>Yigo Guam Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg" 
+             alt="Washington D.C. Temple" loading="lazy" width="400" height="250">
+        <figcaption>Washington D.C. Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg" 
+             alt="Lima Peru Temple" loading="lazy" width="400" height="250">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg" 
+             alt="Mexico City Mexico Temple" loading="lazy" width="400" height="250">
+        <figcaption>Mexico City Mexico Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg" 
+             alt="Salt Lake Temple" loading="lazy" width="400" height="250">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/400x640/8-Boise-Idaho-Temple-1464849.jpg" 
+             alt="Boise Idaho Temple" loading="lazy" width="400" height="250">
+        <figcaption>Boise Idaho Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Samson Omale | Idaho</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

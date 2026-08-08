@@ -1,0 +1,41 @@
+/* Larger view styles - applied via media query */
+@media (min-width: 768px) {
+
+  /* Hide hamburger button */
+  #menu {
+    display: none;
+  }
+
+  /* Show horizontal navigation */
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background: none;
+  }
+
+  .navigation a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  /* Grid: 2 or 3 columns */
+  .temple-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    padding: 1.5rem 2rem;
+  }
+}
