@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confidentially record an incident report. Data is stored locally on your device.">
+  <title>Report an Incident | SafeNaija</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🛡️ Safe<span>Naija</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="report.html" class="active">Report</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Report an Incident</h1>
+    <p class="text-center mb-2">
+      This form stores your report <strong>only on this device</strong> using localStorage. 
+      It is a private record you can later share with the appropriate authorities.
+    </p>
+
+    <form id="report-form" class="card" style="max-width: 600px; margin: 0 auto; padding: 1.5rem;">
+      <div class="form-group">
+        <label for="name">Your Name (optional – leave blank for Anonymous)</label>
+        <input type="text" id="name" name="name" placeholder="Anonymous">
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location <span aria-hidden="true">*</span></label>
+        <input type="text" id="location" name="location" required placeholder="e.g. Ikeja, Lagos">
+      </div>
+
+      <div class="form-group">
+        <label for="type">Type of Incident <span aria-hidden="true">*</span></label>
+        <select id="type" name="type" required>
+          <option value="">-- Select --</option>
+          <option value="Robbery">Robbery</option>
+          <option value="Kidnapping">Kidnapping / Attempt</option>
+          <option value="Suspicious Activity">Suspicious Activity</option>
+          <option value="Assault">Assault</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description <span aria-hidden="true">*</span></label>
+        <textarea id="description" name="description" required placeholder="Briefly describe what happened..."></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit Report</button>
+      <div id="form-message" class="form-message" role="alert"></div>
+    </form>
+
+    <div id="recent-reports" class="mt-1" style="max-width: 600px; margin: 2rem auto 0;"></div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <p><strong>SafeNaija</strong></p>
+        <p>Combating insecurity in Nigeria, one informed citizen at a time.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
